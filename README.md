@@ -22,7 +22,7 @@ Given a new-line delimited JSON file such as this:
 You can pipe the contents into the CLI tool and pipe the output to your destination
 
 ```sh
-cat input.ndjson | red-maple --map "value * 2" --reduce "(memo || 0) + value" > output.txt
+cat input.ndjson | red-maple --map "item * 2" --reduce "(memo || 0) + item" > output.txt
 ```
 
 ### Programmatic API
@@ -34,11 +34,11 @@ redMaple({
   input: 'stdin',
   output: 'stdout',
   initial: 0,
-  map (value) {
-    return value * 2
+  map (item) {
+    return item * 2
   },
-  reduce (memo, value) {
-    return memo + value
+  reduce (memo, item) {
+    return memo + item
   }
 })
 ```
