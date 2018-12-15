@@ -1,0 +1,45 @@
+{
+  "name": "red-maple",
+  "version": "1.0.0",
+  "description": "A JS-powered map/reduce processor for your logs",
+  "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "homepage": "https://github.com/Qard/red-maple#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qard/red-maple.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qard/red-maple/issues"
+  },
+  "bin": {
+    "red-maple": "./bin.js"
+  },
+  "scripts": {
+    "test": "tap test/test.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "log",
+    "map",
+    "reduce",
+    "javascript",
+    "functions"
+  ],
+  "dependencies": {
+    "ensure-function": "^1.0.0",
+    "ensure-stream": "^1.0.0",
+    "ndjson": "^1.5.0",
+    "pino": "^5.9.0",
+    "pino-pretty": "^2.3.0",
+    "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "concat-stream": "^1.6.2",
+    "into-stream": "^4.0.0",
+    "tap": "^12.1.0"
+  }
+}
