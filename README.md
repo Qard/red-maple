@@ -75,6 +75,6 @@ The initial `memo` state for the reduce function to use.
 
 A custom parser stream can be given to consume data from _any_ format. By default, it will use `ndjson.parser()`.
 
-##### options.parser
+##### options.serializer
 
 A custom serializer stream can be given to product data in _any_ format. By default, it will use `ndjson.serializer()`.
