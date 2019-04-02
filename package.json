@@ -17,7 +17,10 @@
     "red-maple": "./bin.js"
   },
   "scripts": {
-    "test": "tap test/test.js"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "precoverage:html": "npm run test",
+    "coverage:html": "nyc report --reporter=html && open coverage/index.html",
+    "test": "standard && nyc tap test/test.js"
   },
   "directories": {
     "test": "test"
@@ -38,8 +41,16 @@
     "yargs": "^12.0.5"
   },
   "devDependencies": {
+    "codecov": "^3.2.0",
     "concat-stream": "^1.6.2",
     "into-stream": "^4.0.0",
+    "nyc": "^13.3.0",
+    "standard": "^12.0.1",
     "tap": "^12.1.0"
+  },
+  "standard": {
+    "ignore": [
+      "test/{map,reduce}.js"
+    ]
   }
 }
