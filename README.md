@@ -1,5 +1,7 @@
 # red-maple
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/red-maple.svg)](https://greenkeeper.io/)
+
 With red-maple you can map/reduce one stream to another, using JavaScript code for map and reduce functions.
 
 ## Install
