@@ -141,7 +141,7 @@ tap.test('custom parser + serializer', t => {
   })
 
   redMaple({
-    input: intoStream.obj(inputs),
+    input: intoStream.object(inputs),
     parser,
     serializer,
     output: outputStream,
