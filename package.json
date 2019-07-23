@@ -36,7 +36,7 @@
     "ensure-function": "^2.0.0",
     "ensure-stream": "^1.0.0",
     "ndjson": "^1.5.0",
-    "pino": "^5.9.0",
+    "pino": "^5.13.1",
     "pino-pretty": "^2.3.0",
     "yargs": "^13.2.2"
   },
